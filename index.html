@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="light">
+    <main>
+       <div class="history"></div>
+       <div class="display">
+       <div class="menu"><p>Current expression</p><i class="fa-solid fa-ellipsis-vertical" id="menu"></i></div>
+       <input id="expression" autofocus >
+       <input id="evaluation" readonly>
+       <div class="bar"></div>
+       </div>
+       <!-- <div class=" special"  id="firstRow">
+        <button onclick="toAppend()">√</button>
+        <button onclick="pi()">π</button>
+        <button onclick="pow()">^</button>
+        <button onclick="fact()">!</button>
+        <button onclick="toggleRow()"><i id="expand" class="fa-solid fa-chevron-up  .rotate"></i></button>
+       </div>
+
+       <div class="rows special">
+        <button onclick="deg()">DEG</button>
+        <button onclick="sin()">sin</button>
+        <button onclick="cos()">cos</button>
+        <button onclick="tan()">tan</button>
+       </div>
+       <div class="rows special">
+        <button onclick="inv()">INV</button>
+        <button onclick="e()">e</button>
+        <button onclick="ln()">ln</button>
+        <button onclick="log()">log</button>
+       </div> -->
+       
+       <div class="btns">
+        <div class="row">
+        <button onclick="ac()">AC</button>
+        <button>( </button>
+        <button>)</button>
+        <button>/</button>
+    </div>
+    <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+    </div>
+    <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+    </div>
+    <div class="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+    </div>
+    <div class="row">
+        <button>0</button>
+        <button>.</button>
+        <button onclick="backspc()"><i class="fa-solid fa-delete-left"></i></button>
+        <button onclick="equals()">=</button>
+    </div>
+       </div>
+    </main>
+</body>
+<script src="script.js" defer></script>
+</html>
